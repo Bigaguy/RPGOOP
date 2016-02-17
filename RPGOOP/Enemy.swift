@@ -20,7 +20,7 @@ class Enemy: Character {
     
     func dropLoot() -> String? {
         
-        if !isAlive {
+        if !isAlive { // if is alive is not true
             let rand = Int(arc4random_uniform(UInt32(loot.count)))
             return loot[rand]
         }
